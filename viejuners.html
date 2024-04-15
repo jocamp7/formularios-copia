@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario viejuners</title>
+
+    <style>
+
+        div{
+            margin-top: 10px;
+        }
+
+        form{
+            margin-top: 30px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <form>
+
+        <fieldset> <legend>Formulario para unirte al club viejuners:</legend>
+
+
+        <div>
+        <label for="nombre" >Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autofocus tabindex="1">
+        </div>
+
+        <div>
+        <label for="apellido1">Primer apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" placeholder="tu primer apellido" tabindex="2">
+        </div>
+
+        <div>
+        <label for="apellido2">Segundo apellido:</label>
+        <input type="text" id="apellido2" name="apellido2" placeholder="tu segundo apellido" tabindex="3">
+        </div>
+
+        <div>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" tabindex="4">
+        </div>
+
+        <div>
+        <p tabindex="5">Sexo:</p>
+        <label for="sexo1">Femenino</label>
+        <input type="radio" id="sexo1" name="sexo" >
+        <label for="sexo2">Masculino</label>
+        <input type="radio" id="sexo2" name="sexo">
+        <label for="sexo3">Otro/Prefiero no decirlo</label>
+        <input type="radio" id="sexo3" name="sexo">
+        <label for="sexo4">Sí, gracias</label>
+        <input type="radio" id="sexo4" name="sexo">
+        </div>
+
+        <div>
+        <label for="viejuner" > Me siento viejuner</label>
+        <input type="checkbox" id="viejuner" name="viejuner" tabindex="6">
+        </div>
+
+        <div>
+        <label for="sobreti">Escribe algo sobre ti:</label>
+        <textarea id="sobreti" name="sobreti" tabindex="7"> </textarea>
+        </div>
+
+        <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="micorreo@gmail.com" tabindex="8">
+        </div>
+
+        <div>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel" placeholder="123456789" tabindex="9">
+        </div>
+
+        <div>
+        <input type="submit" value="Enviar" tabindex="10">
+        </div>
+
+        <div><input type="reset" tabindex="11"></div>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

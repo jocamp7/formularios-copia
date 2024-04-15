@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladrones de bicicletas</title>
+
+    <style>
+
+        div{
+            margin-top: 10px;
+        }
+
+        form{
+            margin-top: 30px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <!--Debes crear dos formularios completos, que incluyan un autofocus, tabindex, reset, submit, fieldset, legend
+
+    Huelga decir que cada uno de los campos ha de tener label, enlazado con su input, placeholders-->
+
+    <form>
+
+        <fieldset> <legend>Rellene este formulario sobre el robo de su bicicleta:</legend>
+
+            <div>
+            <label for="fecha">Día que robaron la bicicleta:</label>
+            <input type="date" id="fecha" name="fecha" autofocus placeholder="01/01/2023" tabindex="1">
+            </div>
+
+            <div>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" placeholder="00:00" tabindex="2">
+            </div>
+
+            <div>
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" id="color" name="color" tabindex="3">
+            </div>  
+
+            <div>
+            <label for="precio">Rango de precio (izq bajo, der alto):</label>
+            <input type="range" id="precio" name="precio" tabindex="4">
+            </div>
+
+            <div>
+
+                <label for="tipobici ">Tipo de bicicleta</label>
+
+            <select name="tipobici" id="tipobici" tabindex="5">
+
+                <optgroup label="Paseo">
+                  <option >Señorial</option>
+                  <option>Anti-plebeyos</option>
+                  <option>PorEncimaDelHombro</option>
+                </optgroup>
+                <hr />
+
+                <optgroup label="Montaña">
+                  <option>Gamusinos</option>
+                  <option>Hueleflores premium</option>
+                  <option>Fango lover</option>
+                </optgroup>
+                <hr />
+
+                <optgroup label="Carreras">
+                  <option>Metroymedio</option>
+                  <option>3 de la tarde. Fluorescente edition</option>
+                  <option>Grupitors</option>
+                </optgroup>
+
+            </select>
+
+            </div>
+
+            <div>
+            <label for="accesorios">Accesorios:(para seleccionar varios, cntrl+click en los accesorios)</label><br> <!--perdona esta unidad de br-->
+                <select name="accesorios" id="accesorios" multiple tabindex="6"> 
+                    <option value="Ruedines">Ruedines</option>
+                    <option value="Pegatinas">Pegatinas</option>
+                    <option value="Cesta">Cesta</option>
+                    <option value="Bomba de aire">Bomba de aire</option>
+                    <option value="Timbre">Timbre</option>
+                    <option value="Foco">Foco</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="marca">Marca</label>
+                
+                <input list="marca" tabindex="7">
+
+                <datalist id="marca" >
+
+                     <option value="specialized">
+                     <option value="trek">
+                     <option value="merida">
+                     <option value="scott">
+                     <option value="giant">
+                     <option value="cube">
+                     <option value="lapierre">
+                     <option value="orbea">
+                     <option value="cannondale">
+                     <option value="bmc">
+                     <option value="canyon">
+                     <option value="look">
+                     <option value="protek">
+                     <option value="megamo">
+                     <option value="pinarello">
+                     <option value="bianchi">
+                     <option value="bh">
+                     <option value="factor">
+                     <option value="ghost">
+                     <option value="cervélo">
+                     <option value="argon">
+                        
+                </datalist>
+
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar" tabindex=" 8">
+                </div>
+        
+                <div><input type="reset" tabindex="9 "></div>
+        
+
+    
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
